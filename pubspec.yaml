@@ -25,9 +25,9 @@ flutter:
   uses-material-design: true
 
 fonts:
-  - family: MaterialIcons
-    fonts:
-      - asset: web/assets/fonts/MaterialIcons-Regular.ttf
+  # - family: MaterialIcons
+  #   fonts:
+  #     - asset: web/assets/fonts/MaterialIcons-Regular.ttf
   - family: Quicksand
     fonts:
       - asset: web/assets/fonts/Quicksand-Regular.otf
