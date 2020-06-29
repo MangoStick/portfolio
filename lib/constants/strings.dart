@@ -11,7 +11,7 @@ class Strings {
   static const String experience = 'Experience';
   static const String exp_detail = 'coming soon..';
   static const String skills_i_have = 'What Skill I Have';
-  static const String rights_reserved = '©2018-Now.';
+  static const String rights_reserved = '©2018-PRESENT.';
 
   // menu items
   static const String menu_home = 'Home';

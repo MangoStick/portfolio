@@ -6,7 +6,8 @@ import 'package:portfolio/constants/text_styles.dart';
 import 'package:portfolio/models/education.dart';
 import 'package:portfolio/utils/screen/screen_utils.dart';
 import 'package:portfolio/widgets/responsive_widget.dart';
-// import 'dart:html' as html;
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'dart:html' as html;
 
 class HomePage extends StatelessWidget {
   @override
@@ -170,7 +171,7 @@ class HomePage extends StatelessWidget {
           _buildCopyRightText(context),
           SizedBox(
               height: ResponsiveWidget.isSmallScreen(context) ? 12.0 : 0.0),
-          //_buildSocialIcons(),
+          _buildSocialIcons(),
           SizedBox(
               height: ResponsiveWidget.isSmallScreen(context) ? 12.0 : 0.0),
         ],
@@ -332,13 +333,13 @@ class HomePage extends StatelessWidget {
     Education(
       'Aug 2019',
       'Present',
-      'Arise Corporation Co.,Ltd.',
+      'Arise Corporation Co.,Ltd., Thailand',
       'Developer',
     ),
     Education(
       'Jan 2019',
       'Jun 2019',
-      'Wenzhou Medical University\'s affiliate Eye hospital Zhejiang',
+      'Wenzhou Medical University\'s affiliate Eye hospital Zhejiang, China',
       'C# .NET Programmer',
     ),
   ];
@@ -417,7 +418,7 @@ class HomePage extends StatelessWidget {
                 alignment: Alignment.centerLeft,
               ),
               Align(
-                //child: _buildSocialIcons(),
+                child: _buildSocialIcons(),
                 alignment: Alignment.centerRight,
               ),
             ],
@@ -436,59 +437,74 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  // Widget _buildSocialIcons() {
-  //   return Row(
-  //     mainAxisSize: MainAxisSize.max,
-  //     mainAxisAlignment: MainAxisAlignment.center,
-  //     children: <Widget>[
-  //       GestureDetector(
-  //         onTap: () {
-            
-  //         },
-  //         child: Image.network(
-  //           Assets.linkedin,
-  //           color: Color(0xFF45405B),
-  //           height: 20.0,
-  //           width: 20.0,
-  //         ),
-  //       ),
-  //       SizedBox(width: 16.0),
-  //       GestureDetector(
-  //         onTap: () {
-            
-  //         },
-  //         child: Image.network(
-  //           Assets.evernote,
-  //           color: Color(0xFF45405B),
-  //           height: 20.0,
-  //           width: 20.0,
-  //         ),
-  //       ),
-  //       SizedBox(width: 16.0),
-  //       GestureDetector(
-  //         onTap: () {
-           
-  //         },
-  //         child: Image.network(
-  //           Assets.google,
-  //           color: Color(0xFF45405B),
-  //           height: 20.0,
-  //           width: 20.0,
-  //         ),
-  //       ),
-  //       SizedBox(width: 16.0),
-  //       GestureDetector(
-  //         onTap: () {
-            
-  //         },
-  //         child: Image.network(
-  //           Assets.twitter,
-  //           color: Color(0xFF45405B),
-  //           height: 20.0,
-  //           width: 20.0,
-  //         ),
-  //       ),
-  //     ],
-  //   );
-  // }
+  Widget _buildSocialIcons() {
+    return Row(
+      mainAxisSize: MainAxisSize.max,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        GestureDetector(
+          onTap: () {
+            html.window.open("https://www.facebook.com/Jack.Jakkapat.Noimhor", "Facebook");
+          },
+          child: Icon(
+            FontAwesomeIcons.facebookSquare,
+            color: Color(0xFF45405B),
+            size: 20.0,
+          ),
+          // child: Image.network(
+          //   Assets.linkedin,
+          //   color: Color(0xFF45405B),
+          //   height: 20.0,
+          //   width: 20.0,
+          // ),
+        ),
+        SizedBox(width: 16.0),
+        GestureDetector(
+          onTap: () {
+            html.window.open("https://www.instagram.com/jacky.jpn", "Instagram");
+          },
+          child: Icon(
+            FontAwesomeIcons.instagram,
+            color: Color(0xFF45405B),
+            size: 20.0,
+          ),
+          // child: Image.network(
+          //   Assets.evernote,
+          //   color: Color(0xFF45405B),
+          //   height: 20.0,
+          //   width: 20.0,
+          // ),
+        ),
+        SizedBox(width: 16.0),
+        GestureDetector(
+          onTap: () {
+            html.window.open("https://github.com/MangoStick", "Github");
+          },
+          child: Icon(
+            FontAwesomeIcons.githubAlt,
+            color: Color(0xFF45405B),
+            size: 20.0,
+          ),
+          // child: Image.network(
+          //   Assets.google,
+          //   color: Color(0xFF45405B),
+          //   height: 20.0,
+          //   width: 20.0,
+          // ),
+        ),
+        // SizedBox(width: 16.0),
+        // GestureDetector(
+        //   onTap: () {
+        //     html.window.open("https://github.com/MangoStick", "Github");
+        //   },
+        //   child: Image.network(
+        //     Assets.twitter,
+        //     color: Color(0xFF45405B),
+        //     height: 20.0,
+        //     width: 20.0,
+        //   ),
+        // ),
+      ],
+    );
+  }
 }

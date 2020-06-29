@@ -32,6 +32,7 @@ class TextStyles {
         fontFamily: Fonts.product,
         fontSize: 17.0, //17.0
         letterSpacing: 1.2,
+        //fontWeight: FontWeight.bold
       );
 
   static TextStyle get company => TextStyle(
