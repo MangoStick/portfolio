@@ -61,7 +61,8 @@ class TextStyles {
 
   static TextStyle get chip => TextStyle(
     fontFamily: Fonts.product,
-    color: Color(0xFF85819C),
+    //color: Color(0xFF85819C),
+    color: Colors.white,
     height: 1.5,
     fontSize: 12.0, //12.0
     letterSpacing: 1.0,

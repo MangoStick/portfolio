@@ -319,6 +319,7 @@ class HomePage extends StatelessWidget {
 
   Widget _buildSkillChip(BuildContext context, String label) {
     return Chip(
+      backgroundColor: Color(0xFF50AFC0),
       label: Text(
         label,
         style: TextStyles.chip.copyWith(
