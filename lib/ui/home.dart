@@ -492,18 +492,23 @@ class HomePage extends StatelessWidget {
           //   width: 20.0,
           // ),
         ),
-        // SizedBox(width: 16.0),
-        // GestureDetector(
-        //   onTap: () {
-        //     html.window.open("https://github.com/MangoStick", "Github");
-        //   },
-        //   child: Image.network(
-        //     Assets.twitter,
-        //     color: Color(0xFF45405B),
-        //     height: 20.0,
-        //     width: 20.0,
-        //   ),
-        // ),
+        SizedBox(width: 16.0),
+        GestureDetector(
+          onTap: () {
+            html.window.open("https://open.spotify.com/user/jakkapat?fbclid=IwAR3nuCfQDf7dFoxSNyIHEt0Uv6rkDW4IHfLWWqX5vAeyjUGkdSDWo17O_NU", "Spotify");
+          },
+          child: Icon(
+            FontAwesomeIcons.spotify,
+            color: Color(0xFF45405B),
+            size: 20.0,
+          ),
+          // child: Image.network(
+          //   Assets.twitter,
+          //   color: Color(0xFF45405B),
+          //   height: 20.0,
+          //   width: 20.0,
+          // ),
+        ),
       ],
     );
   }
