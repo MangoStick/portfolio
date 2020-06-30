@@ -286,9 +286,10 @@ class HomePage extends StatelessWidget {
     'Dart',
     'Angular',
     'C#',
-    'ASP .NET',
-    'ASP .NET CORE',
-    'PHP Lalavel',
+    'ASP.NET',
+    'ASP.NET Core',
+    'PHP',
+    'Laravel',
     'Updating..'
   ];
 
