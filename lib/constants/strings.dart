@@ -6,7 +6,7 @@ class Strings {
   static const String me = ' Me';
   static const String portfoli = 'Portfoli';
   static const String o = 'o';
-  static const String headline = 'I\'am Jakkapat Noimhor, Web & Mobile App Developer from Chiang Rai, Thailand';
+  static const String headline = 'I\'m Jakkapat Noimhor, Web & Mobile App Developer from Chiang Rai, Thailand';
   static const String summary = 'coming soon..';
   static const String experience = 'Experience';
   static const String exp_detail = 'coming soon..';
