@@ -288,7 +288,8 @@ class HomePage extends StatelessWidget {
     'C#',
     'ASP .NET',
     'ASP .NET CORE',
-    'PHP Lalavel Framework',
+    'PHP Lalavel',
+    'Updating..'
   ];
 
   Widget _buildSkills(BuildContext context) {
