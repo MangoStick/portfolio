@@ -24,19 +24,19 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-fonts:
-  - family: MaterialIcons
-    fonts:
-      - asset: web/assets/fonts/MaterialIcons-Regular.ttf
-  - family: Quicksand
-    fonts:
-      - asset: web/assets/fonts/Quicksand-Regular.otf
-  - family: ProductSans
-    fonts:
-      - asset: web/assets/fonts/Product-Sans-Regular.ttf
-  - family: NexaBold
-    fonts:
-      - asset: web/assets/fonts/NexaBold.otf
-  - family: NexaLight
-    fonts:
-      - asset: web/assets/fonts/NexaLight.otf
+  fonts:
+    - family: MaterialIcons
+      fonts:
+        - asset: web/assets/fonts/MaterialIcons-Regular.ttf
+    - family: Quicksand
+      fonts:
+        - asset: web/assets/fonts/Quicksand-Regular.otf
+    - family: ProductSans
+      fonts:
+        - asset: web/assets/fonts/Product-Sans-Regular.ttf
+    - family: NexaBold
+      fonts:
+        - asset: web/assets/fonts/NexaBold.otf
+    - family: NexaLight
+      fonts:
+        - asset: web/assets/fonts/NexaLight.otf

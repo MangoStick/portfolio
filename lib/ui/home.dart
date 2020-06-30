@@ -36,8 +36,8 @@ class HomePage extends StatelessWidget {
       title: _buildTitle(),
       backgroundColor: Colors.transparent,
       elevation: 0.0,
-      // actions:
-      //     !ResponsiveWidget.isSmallScreen(context) ? _buildActions() : null,
+      actions:
+          !ResponsiveWidget.isSmallScreen(context) ? _buildActions() : null,
     );
   }
 
@@ -68,29 +68,29 @@ class HomePage extends StatelessWidget {
 
   List<Widget> _buildActions() {
     return <Widget>[
-      MaterialButton(
-        child: Text(
-          Strings.menu_home,
-          style: TextStyles.menu_item.copyWith(
-            color: Color(0xFF50AFC0),
-          ),
-        ),
-        onPressed: () {},
-      ),
-      MaterialButton(
-        child: Text(
-          Strings.menu_about,
-          style: TextStyles.menu_item,
-        ),
-        onPressed: () {},
-      ),
-      MaterialButton(
-        child: Text(
-          Strings.menu_contact,
-          style: TextStyles.menu_item,
-        ),
-        onPressed: () {},
-      ),
+      // MaterialButton(
+      //   child: Text(
+      //     Strings.menu_home,
+      //     style: TextStyles.menu_item.copyWith(
+      //       color: Color(0xFF50AFC0),
+      //     ),
+      //   ),
+      //   onPressed: () {},
+      // ),
+      // MaterialButton(
+      //   child: Text(
+      //     Strings.menu_about,
+      //     style: TextStyles.menu_item,
+      //   ),
+      //   onPressed: () {},
+      // ),
+      // MaterialButton(
+      //   child: Text(
+      //     Strings.menu_contact,
+      //     style: TextStyles.menu_item,
+      //   ),
+      //   onPressed: () {},
+      // ),
     ];
   }
 
