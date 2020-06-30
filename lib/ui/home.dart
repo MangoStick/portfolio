@@ -68,15 +68,15 @@ class HomePage extends StatelessWidget {
 
   List<Widget> _buildActions() {
     return <Widget>[
-      // MaterialButton(
-      //   child: Text(
-      //     Strings.menu_home,
-      //     style: TextStyles.menu_item.copyWith(
-      //       color: Color(0xFF50AFC0),
-      //     ),
-      //   ),
-      //   onPressed: () {},
-      // ),
+       MaterialButton(
+         child: Text(
+           Strings.menu_home,
+           style: TextStyles.menu_item.copyWith(
+             color: Color(0xFF50AFC0),
+           ),
+         ),
+         onPressed: () {},
+       ),
       // MaterialButton(
       //   child: Text(
       //     Strings.menu_about,
@@ -86,11 +86,11 @@ class HomePage extends StatelessWidget {
       // ),
       // MaterialButton(
       //   child: Text(
-      //     Strings.menu_contact,
-      //     style: TextStyles.menu_item,
+       //    Strings.menu_contact,
+       //    style: TextStyles.menu_item,
       //   ),
       //   onPressed: () {},
-      // ),
+      //),
     ];
   }
 
