@@ -295,7 +295,7 @@ class HomePage extends StatelessWidget {
     'JavaScript',
     'TypeScript',
     'HTML',
-    'HTML5'
+    'HTML5',
     'Updating..'
   ];
 
