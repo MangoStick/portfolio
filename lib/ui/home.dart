@@ -349,7 +349,7 @@ class HomePage extends StatelessWidget {
       'Jan 2019',
       'Jun 2019',
       'Wenzhou Medical University\'s affiliate Eye hospital Zhejiang, China',
-      'C# .NET Programmer',
+      'C# ASP.NET Programmer',
     ),
   ];
 
