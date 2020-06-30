@@ -290,6 +290,12 @@ class HomePage extends StatelessWidget {
     'ASP.NET Core',
     'PHP',
     'Laravel',
+    'CSS',
+    'SCSS',
+    'JavaScript',
+    'TypeScript',
+    'HTML',
+    'HTML5'
     'Updating..'
   ];
 
