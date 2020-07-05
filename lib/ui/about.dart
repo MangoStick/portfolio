@@ -9,7 +9,7 @@ import 'package:portfolio/widgets/responsive_widget.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'dart:html' as html;
 
-class HomePage extends StatelessWidget {
+class AboutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -36,6 +36,7 @@ class HomePage extends StatelessWidget {
       title: _buildTitle(),
       backgroundColor: Colors.transparent,
       elevation: 0.0,
+      //automaticallyImplyLeading: false,
       actions:
           !ResponsiveWidget.isSmallScreen(context) ? _buildActions(context) : null,
     );
@@ -71,20 +72,20 @@ class HomePage extends StatelessWidget {
        MaterialButton(
          child: Text(
            Strings.menu_home,
-           style: TextStyles.menu_item.copyWith(
-             color: Color(0xFF50AFC0),
-           ),
+           style: TextStyles.menu_item
          ),
-         onPressed: () { },
+         onPressed: () {
+           Navigator.of(context).pushNamedAndRemoveUntil('/', (Route<dynamic> route) => false);
+         },
        ),
       MaterialButton(
         child: Text(
           Strings.menu_about,
-          style: TextStyles.menu_item,
+          style: TextStyles.menu_item.copyWith(
+             color: Color(0xFF50AFC0),
+           ),
         ),
-        onPressed: () {
-          Navigator.pushNamed(context, Strings.AboutRoute);
-        },
+        onPressed: () {},
       ),
       // MaterialButton(
       //   child: Text(
@@ -198,9 +199,9 @@ class HomePage extends StatelessWidget {
         SizedBox(height: ResponsiveWidget.isSmallScreen(context) ? 24.0 : 0.0),
         _buildAboutMe(context),
         SizedBox(height: 4.0),
-        _buildHeadline(context),
+        // _buildHeadline(context),
         SizedBox(height: ResponsiveWidget.isSmallScreen(context) ? 12.0 : 24.0),
-        _buildSummary(),
+        // _buildSummary(),
         SizedBox(height: ResponsiveWidget.isSmallScreen(context) ? 24.0 : 48.0),
         ResponsiveWidget.isSmallScreen(context)
             ? Column(
@@ -208,8 +209,9 @@ class HomePage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   _buildEducation(),
-                  SizedBox(height: 24.0),
-                  _buildSkills(context),
+                  // SizedBox(height: 200.0),
+                  _buildEducation2(),
+                  //_buildSkills(context),
                 ],
               )
             : _buildSkillsAndEducation(context)
@@ -228,14 +230,14 @@ class HomePage extends StatelessWidget {
         ),
         children: <TextSpan>[
           TextSpan(
-            text: Strings.about,
+            text: Strings.developer,
             style: TextStyles.heading.copyWith(
               fontFamily: Fonts.nexa_light,
               fontSize: ResponsiveWidget.isSmallScreen(context) ? 36 : 45.0,
             ),
           ),
           TextSpan(
-            text: Strings.me,
+            text: Strings.portfolio,
             style: TextStyles.heading.copyWith(
               color: Color(0xFF50AFC0),
               fontSize: ResponsiveWidget.isSmallScreen(context) ? 36 : 45.0,
@@ -276,66 +278,9 @@ class HomePage extends StatelessWidget {
         SizedBox(width: 40.0),
         Expanded(
           flex: 1,
-          child: _buildSkills(context),
+          child: _buildEducation2(),
         ),
       ],
-    );
-  }
-
-  // Skills Methods:------------------------------------------------------------
-  final skills = [
-    'Flutter',
-    'Dart',
-    'Angular 8, 9',
-    'C#',
-    'ASP.NET',
-    'ASP.NET Core',
-    'PHP',
-    'Laravel',
-    'CSS',
-    'SCSS',
-    'JavaScript',
-    'TypeScript',
-    'HTML',
-    'HTML5',
-    'Updating..'
-  ];
-
-  Widget _buildSkills(BuildContext context) {
-    final List<Widget> widgets = skills
-        .map((skill) => Padding(
-              padding: EdgeInsets.only(right: 8.0),
-              child: _buildSkillChip(context, skill),
-            ))
-        .toList();
-
-    return Column(
-      mainAxisSize: MainAxisSize.max,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        _buildSkillsContainerHeading(),
-        Wrap(children: widgets),
-//        _buildNavigationArrows(),
-      ],
-    );
-  }
-
-  Widget _buildSkillsContainerHeading() {
-    return Text(
-      Strings.skills_i_have,
-      style: TextStyles.sub_heading,
-    );
-  }
-
-  Widget _buildSkillChip(BuildContext context, String label) {
-    return Chip(
-      backgroundColor: Color(0xFF50AFC0),
-      label: Text(
-        label,
-        style: TextStyles.chip.copyWith(
-          fontSize: ResponsiveWidget.isSmallScreen(context) ? 10.0 : 11.0,
-        ),
-      ),
     );
   }
 
@@ -344,32 +289,96 @@ class HomePage extends StatelessWidget {
     Education(
       'Aug 2019',
       'Present',
-      'Arise Corporation Co.,Ltd., Thailand',
-      'Developer',
+      'Angular 8 (Front-end)',
+      'Dip e-Trademark',
     ),
     Education(
       'Jan 2019',
       'Jun 2019',
-      'Wenzhou Medical University\'s affiliate Eye hospital Zhejiang, China',
-      'C# ASP.NET Programmer',
+      'Flutter (Front-end)',
+      'Serve (Mobile)',
+    ),
+    Education(
+      'Jan 2019',
+      'Jun 2019',
+      'Flutter (Front-end)',
+      'E-Leave (Mobile)',
+    ),
+    Education(
+      'Jan 2019',
+      'Jun 2019',
+      'PHP Laravel (Full-Stack)',
+      'E-Leave',
+    ),
+    Education(
+      'Jan 2019',
+      'Jun 2019',
+      'PHP Laravel (Full-Stack)',
+      'SteelCity CMS',
     ),
   ];
+
+  final educationList2 = [
+    Education(
+      'Jan 2019',
+      'Jun 2019',
+      'C#/.NET Web Service asmx (Back-end)',
+      'Thainamthip - PR Approval',
+    ),
+    Education(
+      'Jan 2019',
+      'Jun 2019',
+      'AngularJs/.NET (Back-end)',
+      'PTT - eBudgeting ',
+    ),
+    Education(
+      'Jan 2019',
+      'Jun 2019',
+      'C#/.NET (Full-Stack)',
+      'Smile IVF Clinic',
+    ),
+    Education(
+      'Jan 2019',
+      'Jun 2019',
+      'C#/.NET (Full-Stack)',
+      'Siam Fertility Clinic',
+    ),
+    Education(
+      'Jan 2019',
+      'Jun 2019',
+      'C#/.NET (Full-Stack)',
+      'Eye laser reservation system',
+    ),
+  ];
+
 
   Widget _buildEducation() {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        _buildEducationContainerHeading(),
-        //_buildEducationSummary(),
-        SizedBox(height: 8.0),
+        // _buildEducationContainerHeading(),
+        // _buildEducationSummary(),
+        // SizedBox(height: 8.0),
         _buildEducationTimeline(),
+      ],
+    );
+  }
+
+  Widget _buildEducation2() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        // _buildEducationContainerHeading(),
+        // _buildEducationSummary(),
+        //SizedBox(height: 50.0),
+        _buildEducationTimeline2(),
       ],
     );
   }
 
   Widget _buildEducationContainerHeading() {
     return Text(
-      Strings.workexperience,
+      Strings.experience,
       style: TextStyles.sub_heading,
     );
   }
@@ -388,10 +397,21 @@ class HomePage extends StatelessWidget {
     return Column(children: widgets);
   }
 
+  Widget _buildEducationTimeline2() {
+    final List<Widget> widgets = educationList2
+        .map((education) => _buildEducationTile(education))
+        .toList();
+    return Column(children: widgets);
+  }
+
   Widget _buildEducationTile(Education education) {
     return Padding(
       padding: EdgeInsets.symmetric(vertical: 8.0),
-      child: Column(
+      child: Container(
+        width: 250,
+        padding: EdgeInsets.symmetric(horizontal: 0, vertical: 0),
+       //color: Color(0xFF50AFC0),
+        child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Text(
@@ -404,12 +424,13 @@ class HomePage extends StatelessWidget {
               color: Color(0xFF45405B),
             ),
           ),
-          Text(
-            '${education.from}-${education.to}',
-            style: TextStyles.body,
-          ),
+          // Text(
+          //   '${education.from}-${education.to}',
+          //   style: TextStyles.body,
+          // ),
         ],
       ),
+      )
     );
   }
 

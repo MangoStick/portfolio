@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/ui/about.dart';
 import 'package:portfolio/ui/home.dart';
 import 'package:portfolio/utils/screen/screen_utils.dart';
 
@@ -19,7 +20,12 @@ class MyApp extends StatelessWidget {
           primaryColorBrightness: Brightness.light,
           accentColorBrightness: Brightness.light
       ),
-      home: MyAppChild(),
+      //home: MyAppChild(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => MyAppChild(),
+        '/about': (context) => AboutPage()
+      },
     );
   }
 }
