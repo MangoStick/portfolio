@@ -4,6 +4,7 @@ import 'package:portfolio/constants/fonts.dart';
 import 'package:portfolio/constants/strings.dart';
 import 'package:portfolio/constants/text_styles.dart';
 import 'package:portfolio/models/education.dart';
+import 'package:portfolio/ui/about.dart';
 import 'package:portfolio/utils/screen/screen_utils.dart';
 import 'package:portfolio/widgets/responsive_widget.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -75,7 +76,7 @@ class HomePage extends StatelessWidget {
              color: Color(0xFF50AFC0),
            ),
          ),
-         onPressed: () { },
+         onPressed: () {},
        ),
       MaterialButton(
         child: Text(
@@ -83,7 +84,10 @@ class HomePage extends StatelessWidget {
           style: TextStyles.menu_item,
         ),
         onPressed: () {
-          Navigator.pushNamed(context, Strings.AboutRoute);
+          //Navigator.push(context,PageRouteBuilder(pageBuilder: (_, __, ___) => AboutPage()));
+          //Navigator.pushAndRemoveUntil(context, PageRouteBuilder(pageBuilder: (_, __, ___) => AboutPage()), (route) => false);   
+          //Navigator.pushNamed(context, Strings.AboutRoute);
+          Navigator.pushNamedAndRemoveUntil(context, Strings.AboutRoute, (route) => false);
         },
       ),
       // MaterialButton(

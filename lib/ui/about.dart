@@ -4,6 +4,7 @@ import 'package:portfolio/constants/fonts.dart';
 import 'package:portfolio/constants/strings.dart';
 import 'package:portfolio/constants/text_styles.dart';
 import 'package:portfolio/models/education.dart';
+import 'package:portfolio/ui/home.dart';
 import 'package:portfolio/utils/screen/screen_utils.dart';
 import 'package:portfolio/widgets/responsive_widget.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -75,7 +76,9 @@ class AboutPage extends StatelessWidget {
            style: TextStyles.menu_item
          ),
          onPressed: () {
-           Navigator.of(context).pushNamedAndRemoveUntil('/', (Route<dynamic> route) => false);
+           //Navigator.pushAndRemoveUntil(context, PageRouteBuilder(pageBuilder: (_, __, ___) => HomePage()), (route) => false);     
+           Navigator.pushNamedAndRemoveUntil(context, Strings.HomeRoute, (route) => false);
+           //Navigator.of(context).pushNamedAndRemoveUntil('/', (Route<dynamic> route) => false);
          },
        ),
       MaterialButton(
