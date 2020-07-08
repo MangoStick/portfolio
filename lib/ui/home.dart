@@ -302,6 +302,8 @@ class HomePage extends StatelessWidget {
     'TypeScript',
     'HTML',
     'HTML5',
+    'MySQL',
+    'SQL Server',
     'Updating..'
   ];
 
