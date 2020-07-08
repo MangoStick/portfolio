@@ -292,19 +292,19 @@ class AboutPage extends StatelessWidget {
     Education(
       'Front-end',
       '',
-      'Angular 8',
+      'Angular 8/TypeScript',
       'Dip e-Trademark',
     ),
     Education(
       'Front-end',
       '',
-      'Flutter/SQL Server',
+      'Flutter/Dart/SQL Server',
       'Serve (Mobile)',
     ),
     Education(
       'Full-Stack',
       '',
-      'Flutter/SQL Server/Firebase',
+      'Flutter/Dart/SQL Server/Firebase',
       'E-Leave (Mobile)',
     ),
     Education(
@@ -331,19 +331,19 @@ class AboutPage extends StatelessWidget {
     Education(
       'Back-end',
       '',
-      'AngularJs/C#/.NET/SQL Server',
+      'AngularJs/C#/.NET/SQL Server/RDLC Report',
       'PTT - eBudgeting ',
     ),
     Education(
       'Full-Stack',
       '',
-      'C#/.NET /SQL Server',
+      'C#/.NET /SQL Server/Crystal Reports',
       'Smile IVF Clinic',
     ),
     Education(
       'Full-Stack',
       '',
-      'C#/.NET/SQl Server',
+      'C#/.NET/SQL Server/Crystal Reports',
       'Siam Fertility Clinic',
     ),
     Education(
