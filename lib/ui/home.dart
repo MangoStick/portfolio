@@ -305,7 +305,8 @@ class HomePage extends StatelessWidget {
     'MySQL',
     'SQL Server',
     'Firebase',
-    'Web Service (asmx)'
+    'Web Service (asmx)',
+    'Nginx',
     'Updating..'
   ];
 
