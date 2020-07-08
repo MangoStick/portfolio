@@ -292,31 +292,31 @@ class AboutPage extends StatelessWidget {
     Education(
       'Aug 2019',
       'Present',
-      'Angular 8 (Front-end)',
+      'Angular 8/SQL Server (Front-end)',
       'Dip e-Trademark',
     ),
     Education(
       'Jan 2019',
       'Jun 2019',
-      'Flutter (Front-end)',
+      'Flutter/SQL Server (Front-end)',
       'Serve (Mobile)',
     ),
     Education(
       'Jan 2019',
       'Jun 2019',
-      'Flutter (Front-end)',
+      'Flutter/SQL Server/Firebase (Full-Stack)',
       'E-Leave (Mobile)',
     ),
     Education(
       'Jan 2019',
       'Jun 2019',
-      'PHP Laravel (Full-Stack)',
+      'PHP Laravel/MySQL (Full-Stack)',
       'E-Leave',
     ),
     Education(
       'Jan 2019',
       'Jun 2019',
-      'PHP Laravel (Full-Stack)',
+      'PHP Laravel/MySQL (Full-Stack)',
       'SteelCity CMS',
     ),
   ];
@@ -325,31 +325,31 @@ class AboutPage extends StatelessWidget {
     Education(
       'Jan 2019',
       'Jun 2019',
-      'C#/.NET Web Service asmx (Back-end)',
+      'C#/.NET/Web Service asmx/SQL Server (Back-end)',
       'Thainamthip - PR Approval',
     ),
     Education(
       'Jan 2019',
       'Jun 2019',
-      'AngularJs/.NET (Back-end)',
+      'AngularJs/.NET/SQL Server (Back-end)',
       'PTT - eBudgeting ',
     ),
     Education(
       'Jan 2019',
       'Jun 2019',
-      'C#/.NET (Full-Stack)',
+      'C#/.NET /SQL Server(Full-Stack)',
       'Smile IVF Clinic',
     ),
     Education(
       'Jan 2019',
       'Jun 2019',
-      'C#/.NET (Full-Stack)',
+      'C#/.NET/SQl Server (Full-Stack)',
       'Siam Fertility Clinic',
     ),
     Education(
       'Jan 2019',
       'Jun 2019',
-      'C#/.NET (Full-Stack)',
+      'C#/.NET/SQL Server (Full-Stack)',
       'Eye laser reservation system',
     ),
   ];
