@@ -337,7 +337,7 @@ class AboutPage extends StatelessWidget {
     Education(
       'Full-Stack',
       '',
-      'C#/.NET /SQL Server/Crystal Reports',
+      'C#/.NET/SQL Server/Crystal Reports',
       'Smile IVF Clinic',
     ),
     Education(
