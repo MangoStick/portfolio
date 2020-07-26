@@ -12,7 +12,7 @@ class Strings {
   static const String workexperience = 'Work Experience';
   static const String exp_detail = 'coming soon..';
   static const String skills_i_have = 'What Skill I Have';
-  static const String rights_reserved = '©Create by Fultter.';
+  static const String rights_reserved = '©CREATE BY FLUTTER.';
   static const String job = 'Job';
   static const String developer = 'Developer ';
   static const String portfolio = 'Portfolio';
