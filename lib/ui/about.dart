@@ -293,6 +293,12 @@ class AboutPage extends StatelessWidget {
       'Front-end',
       '',
       'Angular 8/TypeScript',
+      'SCG e-Ordering',
+    ),
+    Education(
+      'Front-end',
+      '',
+      'Angular 8/TypeScript',
       'Dip e-Trademark',
     ),
     Education(
