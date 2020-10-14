@@ -292,6 +292,12 @@ class AboutPage extends StatelessWidget {
     Education(
       'Front-end',
       '',
+      'Flutter/Dart',
+      'RBSC Membership (Mobile Demo)',
+    ),
+    Education(
+      'Front-end',
+      '',
       'Angular 8/TypeScript',
       'SCG e-Ordering',
     ),
