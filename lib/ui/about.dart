@@ -289,12 +289,12 @@ class AboutPage extends StatelessWidget {
 
   // Education Methods:---------------------------------------------------------
   final educationList = [
-//     Education(
-//       'Front-end',
-//       '',
-//       'Flutter/Dart',
-//       'RBSC (Mobile Demo)',
-//     ),
+    Education(
+      'Front-end',
+      '',
+      'Flutter/Dart',
+      'RBSC (Mobile Demo)',
+    ),
     Education(
       'Front-end',
       '',
