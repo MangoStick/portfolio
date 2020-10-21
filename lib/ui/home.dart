@@ -307,7 +307,6 @@ class HomePage extends StatelessWidget {
     'Firebase',
     'Web Service (asmx)',
     'Nginx',
-    'Updating..'
   ];
 
   Widget _buildSkills(BuildContext context) {
