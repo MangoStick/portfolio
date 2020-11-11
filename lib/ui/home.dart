@@ -290,7 +290,7 @@ class HomePage extends StatelessWidget {
   final skills = [
     'Flutter',
     'Dart',
-    'Angular 8',
+    'Angular',
     'C#',
     'ASP.NET',
     'ASP.NET Core',

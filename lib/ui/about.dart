@@ -292,6 +292,12 @@ class AboutPage extends StatelessWidget {
     Education(
       'Front-end',
       '',
+      '.Net Core/Angular 10/TypeScript',
+      'BBTEC PM&M',
+    ),
+    Education(
+      'Front-end',
+      '',
       'Flutter/Dart',
       'RBSC (Mobile Demo)',
     ),
@@ -325,15 +331,15 @@ class AboutPage extends StatelessWidget {
       'PHP Laravel/MySQL',
       'E-Leave',
     ),
+  ];
+
+  final educationList2 = [
     Education(
       'Full-Stack',
       '',
       'PHP Laravel/MySQL',
       'SteelCity CMS',
     ),
-  ];
-
-  final educationList2 = [
     Education(
       'Back-end',
       '',
