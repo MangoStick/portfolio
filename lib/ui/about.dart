@@ -372,7 +372,6 @@ class AboutPage extends StatelessWidget {
     ),
   ];
 
-
   Widget _buildEducation() {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
