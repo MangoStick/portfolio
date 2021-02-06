@@ -299,7 +299,7 @@ class AboutPage extends StatelessWidget {
       'Front-end',
       '',
       'Angular 11/TypeScript',
-      'RBSC Membership Management (Web)',
+      'RBSC Membership Management',
     ),
     Education(
       'Front-end',
@@ -311,7 +311,7 @@ class AboutPage extends StatelessWidget {
       'Front-end',
       '',
       'Flutter/Dart',
-      'RBSC (Mobile Demo)',
+      'RBSC Membership Demo (Mobile)',
     ),
     Education(
       'Front-end',
