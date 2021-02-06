@@ -292,7 +292,19 @@ class AboutPage extends StatelessWidget {
     Education(
       'Front-end',
       '',
-      '.Net Core/Angular 10/TypeScript',
+      'Flutter/Dart/Firebase Cloud Messaging',
+      'RBSC Membership (Mobile)',
+    ),
+    Education(
+      'Front-end',
+      '',
+      'Angular 11/TypeScript',
+      'RBSC Membership Management (Web)',
+    ),
+    Education(
+      'Front-end',
+      '',
+      'Angular 11/TypeScript/JavaScript',
       'BBTEC PM&M',
     ),
     Education(
@@ -316,24 +328,24 @@ class AboutPage extends StatelessWidget {
     Education(
       'Front-end',
       '',
-      'Flutter/Dart/SQL Server',
+      'Flutter/Dart',
       'Serve (Mobile)',
     ),
     Education(
       'Full-Stack',
       '',
-      'Flutter/Dart/SQL Server/Firebase',
+      'Flutter/Dart/Firebase Cloud Messaging',
       'E-Leave (Mobile)',
     ),
+  ];
+
+  final educationList2 = [
     Education(
       'Full-Stack',
       '',
       'PHP Laravel/MySQL',
       'E-Leave',
     ),
-  ];
-
-  final educationList2 = [
     Education(
       'Full-Stack',
       '',
