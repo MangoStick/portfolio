@@ -293,6 +293,12 @@ class AboutPage extends StatelessWidget {
       'Front-end',
       '',
       'Flutter/Dart/Firebase Cloud Messaging',
+      'RBSC Staff (Mobile)',
+    ),
+    Education(
+      'Front-end',
+      '',
+      'Flutter/Dart/Firebase Cloud Messaging',
       'RBSC Membership (Mobile)',
     ),
     Education(
@@ -311,7 +317,13 @@ class AboutPage extends StatelessWidget {
       'Front-end',
       '',
       'Flutter/Dart',
-      'RBSC Membership Demo (Mobile)',
+      'RBSC Staff Demo (Mobile)',
+    ),
+    Education(
+      'Front-end',
+      '',
+      'Flutter/Dart',
+      'RBSC Member Demo (Mobile)',
     ),
     Education(
       'Front-end',
@@ -322,24 +334,24 @@ class AboutPage extends StatelessWidget {
     Education(
       'Front-end',
       '',
-      'Angular 8/TypeScript',
+      'Angular 8/TypeScript/C#/.NetCore',
       'Dip e-Trademark',
     ),
     Education(
       'Front-end',
       '',
       'Flutter/Dart',
-      'Serve (Mobile)',
+      'Serves (Mobile)',
     ),
+  ];
+
+  final educationList2 = [
     Education(
       'Full-Stack',
       '',
       'Flutter/Dart/Firebase Cloud Messaging',
       'E-Leave (Mobile)',
     ),
-  ];
-
-  final educationList2 = [
     Education(
       'Full-Stack',
       '',
@@ -361,7 +373,7 @@ class AboutPage extends StatelessWidget {
     Education(
       'Back-end',
       '',
-      'AngularJs/C#/.NET/SQL Server/RDLC Report',
+      'AngularJs/C#/.NET/RDLC Report',
       'PTT - eBudgeting ',
     ),
     Education(
@@ -379,7 +391,7 @@ class AboutPage extends StatelessWidget {
     Education(
       'Full-Stack',
       '',
-      'C#/.NET/SQL Server/Nginx',
+      'C#/.NET/SQLs/Nginx',
       'Eye laser reservation system',
     ),
   ];
@@ -440,6 +452,7 @@ class AboutPage extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.symmetric(vertical: 8.0),
       child: Container(
+        // height: 60,
         width: 250,
         padding: EdgeInsets.symmetric(horizontal: 0, vertical: 0),
        //color: Color(0xFF50AFC0),
