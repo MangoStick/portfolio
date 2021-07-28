@@ -351,7 +351,7 @@ class HomePage extends StatelessWidget {
   final educationList = [
     Education(
       'Aug 2019',
-      'Present',
+      'Jun 2021',
       'Arise Corporation Co.,Ltd., Thailand',
       'Developer',
     ),
