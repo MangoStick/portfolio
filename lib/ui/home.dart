@@ -342,6 +342,7 @@ class HomePage extends StatelessWidget {
         label,
         style: TextStyles.chip.copyWith(
           fontSize: ResponsiveWidget.isSmallScreen(context) ? 10.0 : 11.0,
+          height: ResponsiveWidget.isSmallScreen(context) ? 1.0 : 0.0
         ),
       ),
     );
@@ -349,6 +350,12 @@ class HomePage extends StatelessWidget {
 
   // Education Methods:---------------------------------------------------------
   final educationList = [
+    Education(
+      'Jul 2019',
+      'Present',
+      '??????',
+      'Flutter Developer',
+    ),
     Education(
       'Aug 2019',
       'Jun 2021',
