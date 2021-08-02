@@ -468,72 +468,85 @@ class HomePage extends StatelessWidget {
       mainAxisSize: MainAxisSize.max,
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        GestureDetector(
-          onTap: () {
-            html.window.open("https://www.facebook.com/Jack.Jakkapat.Noimhor", "Facebook");
-          },
+        // GestureDetector(
+        //   onTap: () {
+        //     html.window.open("https://www.facebook.com/Jack.Jakkapat.Noimhor", "Facebook");
+        //   },
+        //   child: Icon(
+        //     FontAwesomeIcons.facebookSquare,
+        //     color: Color(0xFF45405B),
+        //     size: 20.0,
+        //   ),
+        // ),
+        // SizedBox(width: 16.0),
+        // GestureDetector(
+        //   onTap: () {
+        //     html.window.open("https://www.instagram.com/jacky.jpn", "Instagram");
+        //   },
+        //   child: Icon(
+        //     FontAwesomeIcons.instagram,
+        //     color: Color(0xFF45405B),
+        //     size: 20.0,
+        //   ),
+        // ),
+        // SizedBox(width: 16.0),
+        // GestureDetector(
+        //   onTap: () {
+        //     html.window.open("https://github.com/MangoStick", "Github");
+        //   },
+        //   child: Icon(
+        //     FontAwesomeIcons.githubAlt,
+        //     color: Color(0xFF45405B),
+        //     size: 20.0,
+        //   ),
+        // ),
+        // SizedBox(width: 16.0),
+        // GestureDetector(
+        //   onTap: () {
+        //     html.window.open("https://open.spotify.com/user/jakkapat?fbclid=IwAR3nuCfQDf7dFoxSNyIHEt0Uv6rkDW4IHfLWWqX5vAeyjUGkdSDWo17O_NU", "Spotify");
+        //   },
+        //   child: Icon(
+        //     FontAwesomeIcons.spotify,
+        //     color: Color(0xFF45405B),
+        //     size: 20.0,
+        //   ),
+        // ),
+
+         MaterialButton(
+          minWidth: 0,
           child: Icon(
-            FontAwesomeIcons.facebookSquare,
-            color: Color(0xFF45405B),
-            size: 20.0,
-          ),
-          // child: Image.network(
-          //   Assets.linkedin,
-          //   color: Color(0xFF45405B),
-          //   height: 20.0,
-          //   width: 20.0,
-          // ),
+              FontAwesomeIcons.facebookSquare,
+              color: Color(0xFF45405B),
+              size: 20.0,
+            ),
+          onPressed: () => html.window.open("https://www.facebook.com/Jack.Jakkapat.Noimhor", "Facebook"),
         ),
-        SizedBox(width: 16.0),
-        GestureDetector(
-          onTap: () {
-            html.window.open("https://www.instagram.com/jacky.jpn", "Instagram");
-          },
+        MaterialButton(
+          minWidth: 0,
           child: Icon(
-            FontAwesomeIcons.instagram,
-            color: Color(0xFF45405B),
-            size: 20.0,
-          ),
-          // child: Image.network(
-          //   Assets.evernote,
-          //   color: Color(0xFF45405B),
-          //   height: 20.0,
-          //   width: 20.0,
-          // ),
+              FontAwesomeIcons.instagram,
+              color: Color(0xFF45405B),
+              size: 20.0,
+            ),
+          onPressed: () => html.window.open("https://www.instagram.com/jacky.jpn", "Instagram"),
         ),
-        SizedBox(width: 16.0),
-        GestureDetector(
-          onTap: () {
-            html.window.open("https://github.com/MangoStick", "Github");
-          },
+        MaterialButton(
+          minWidth: 0,
           child: Icon(
-            FontAwesomeIcons.githubAlt,
-            color: Color(0xFF45405B),
-            size: 20.0,
-          ),
-          // child: Image.network(
-          //   Assets.google,
-          //   color: Color(0xFF45405B),
-          //   height: 20.0,
-          //   width: 20.0,
-          // ),
+              FontAwesomeIcons.githubAlt,
+              color: Color(0xFF45405B),
+              size: 20.0,
+            ),
+          onPressed: () => html.window.open("https://github.com/MangoStick", "Github"),
         ),
-        SizedBox(width: 16.0),
-        GestureDetector(
-          onTap: () {
-            html.window.open("https://open.spotify.com/user/jakkapat?fbclid=IwAR3nuCfQDf7dFoxSNyIHEt0Uv6rkDW4IHfLWWqX5vAeyjUGkdSDWo17O_NU", "Spotify");
-          },
+        MaterialButton(
+          minWidth: 0,
           child: Icon(
-            FontAwesomeIcons.spotify,
-            color: Color(0xFF45405B),
-            size: 20.0,
-          ),
-          // child: Image.network(
-          //   Assets.twitter,
-          //   color: Color(0xFF45405B),
-          //   height: 20.0,
-          //   width: 20.0,
-          // ),
+              FontAwesomeIcons.spotify,
+              color: Color(0xFF45405B),
+              size: 20.0,
+            ),
+          onPressed: () => html.window.open("https://open.spotify.com/user/jakkapat?fbclid=IwAR3nuCfQDf7dFoxSNyIHEt0Uv6rkDW4IHfLWWqX5vAeyjUGkdSDWo17O_NU", "Spotify"),
         ),
       ],
     );
