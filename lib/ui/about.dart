@@ -579,7 +579,7 @@ class AboutPage extends StatelessWidget {
               color: Color(0xFF45405B),
               size: 20.0,
             ),
-          onPressed: () => html.window.open("https://www.instagram.com/jacky.jpn", "Instagram"),
+          onPressed: () => html.window.open("https://www.instagram.com/n.jakkapat", "Instagram"),
         ),
         MaterialButton(
           minWidth: 0,

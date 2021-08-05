@@ -353,7 +353,7 @@ class HomePage extends StatelessWidget {
     Education(
       'Jul 2019',
       'Present',
-      '??????',
+      'Bank of Ayudhya (OA)',
       'Flutter Developer',
     ),
     Education(
@@ -528,7 +528,7 @@ class HomePage extends StatelessWidget {
               color: Color(0xFF45405B),
               size: 20.0,
             ),
-          onPressed: () => html.window.open("https://www.instagram.com/jacky.jpn", "Instagram"),
+          onPressed: () => html.window.open("https://www.instagram.com/n.jakkapat", "Instagram"),
         ),
         MaterialButton(
           minWidth: 0,
