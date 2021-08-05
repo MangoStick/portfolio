@@ -353,7 +353,7 @@ class HomePage extends StatelessWidget {
     Education(
       'Jul 2019',
       'Present',
-      'Bank of Ayudhya (OA)',
+      'Krungsri Auto (OA)',
       'Flutter Developer',
     ),
     Education(
