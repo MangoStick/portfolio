@@ -351,7 +351,7 @@ class HomePage extends StatelessWidget {
   // Education Methods:---------------------------------------------------------
   final educationList = [
     Education(
-      'Jul 2019',
+      'Jul 2021',
       'Present',
       'Krungsri Auto (OA)',
       'Flutter Developer',
