@@ -37,16 +37,19 @@ class HomePage extends StatelessWidget {
       title: _buildTitle(),
       backgroundColor: Colors.transparent,
       elevation: 0.0,
-      actions:
-          !ResponsiveWidget.isSmallScreen(context) ? _buildActions(context) : null,
+      actions: !ResponsiveWidget.isSmallScreen(context) ? _buildActions(context) : null,
+      leading: ResponsiveWidget.isSmallScreen(context) ? Builder(
+        builder: (context) => IconButton(
+            icon: new Icon(Icons.menu, color: Color(0xFF45405B)),
+            onPressed: () => Scaffold.of(context).openDrawer(),
+          ),
+        ) : null,
     );
   }
 
   Widget _buildTitle() {
     return RichText(
       text: TextSpan(
-        // Note: Styles for TextSpans must be explicitly defined.
-        // Child text spans will inherit styles from parent
         style: TextStyle(
           fontSize: 14.0,
           color: Colors.black,
