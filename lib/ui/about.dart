@@ -37,9 +37,13 @@ class AboutPage extends StatelessWidget {
       title: _buildTitle(),
       backgroundColor: Colors.transparent,
       elevation: 0.0,
-      //automaticallyImplyLeading: false,
-      actions:
-          !ResponsiveWidget.isSmallScreen(context) ? _buildActions(context) : null,
+      actions: !ResponsiveWidget.isSmallScreen(context) ? _buildActions(context) : null,
+      leading: ResponsiveWidget.isSmallScreen(context) ? Builder(
+        builder: (context) => IconButton(
+            icon: new Icon(Icons.menu, color: Color(0xFF45405B)),
+            onPressed: () => Scaffold.of(context).openDrawer(),
+          ),
+        ) : null,
     );
   }
 
