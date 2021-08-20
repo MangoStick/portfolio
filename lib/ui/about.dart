@@ -294,6 +294,12 @@ class AboutPage extends StatelessWidget {
   // Education Methods:---------------------------------------------------------
   final educationList = [
     Education(
+      '?????',
+      '',
+      'Flutter/Dart/Kotlin',
+      '?????',
+    ),
+    Education(
       'Front-end',
       '',
       'Flutter/Dart/Firebase Cloud Messaging',
@@ -341,15 +347,15 @@ class AboutPage extends StatelessWidget {
       'Angular 8/TypeScript/C#/.NetCore',
       'Dip e-Trademark',
     ),
+  ];
+
+  final educationList2 = [
     Education(
       'Front-end',
       '',
       'Flutter/Dart',
       'Serves (Mobile)',
     ),
-  ];
-
-  final educationList2 = [
     Education(
       'Full-Stack',
       '',
