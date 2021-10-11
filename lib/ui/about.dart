@@ -294,10 +294,10 @@ class AboutPage extends StatelessWidget {
   // Education Methods:---------------------------------------------------------
   final educationList = [
     Education(
-      '?????',
+      'Full-Stack',
       '',
-      'Flutter/Dart/Kotlin',
-      '?????',
+      'Flutter/Dart/Kotlin/Python',
+      'Internal Project',
     ),
     Education(
       'Front-end',

@@ -357,7 +357,7 @@ class HomePage extends StatelessWidget {
       'Jul 2021',
       'Present',
       'Krungsri Auto (OA)',
-      'Flutter Developer',
+      'Software Developer',
     ),
     Education(
       'Aug 2019',
