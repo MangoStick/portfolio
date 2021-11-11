@@ -345,7 +345,7 @@ class HomePage extends StatelessWidget {
         label,
         style: TextStyles.chip.copyWith(
           fontSize: ResponsiveWidget.isSmallScreen(context) ? 10.0 : 11.0,
-          height: ResponsiveWidget.isSmallScreen(context) ? 1.0 : 0.0
+          // height: ResponsiveWidget.isSmallScreen(context) ? 1.0 : 0.0
         ),
       ),
     );
@@ -356,14 +356,14 @@ class HomePage extends StatelessWidget {
     Education(
       'Jul 2021',
       'Present',
-      'Krungsri Auto (OA)',
+      'Krungsri Auto (OA), Thailand',
       'Software Developer',
     ),
     Education(
       'Aug 2019',
       'Jun 2021',
       'Arise Corporation Co.,Ltd., Thailand',
-      'Developer',
+      'Programmer',
     ),
     Education(
       'Jan 2019',
