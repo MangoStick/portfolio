@@ -297,6 +297,8 @@ class HomePage extends StatelessWidget {
     'C#',
     '.NET',
     '.NET Core',
+    'Python',
+    'Kotlin',
     'PHP',
     'Laravel',
     'CSS',
