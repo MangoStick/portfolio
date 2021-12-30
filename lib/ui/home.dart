@@ -347,7 +347,7 @@ class HomePage extends StatelessWidget {
         label,
         style: TextStyles.chip.copyWith(
           fontSize: ResponsiveWidget.isSmallScreen(context) ? 10.0 : 11.0,
-          height: ResponsiveWidget.isSmallScreen(context) ? 0.5 : 0.0
+          // height: ResponsiveWidget.isSmallScreen(context) ? 0.5 : 0.0
         ),
       ),
     );
