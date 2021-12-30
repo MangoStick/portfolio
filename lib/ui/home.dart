@@ -342,20 +342,14 @@ class HomePage extends StatelessWidget {
 
   Widget _buildSkillChip(BuildContext context, String label) {
     return Chip(
-      labelPadding: EdgeInsets.all(2.0),
-//       avatar: CircleAvatar(
-//         backgroundColor: Colors.white70,
-//         child: Text(label[0].toUpperCase()),
-//       ),
+      labelPadding: EdgeInsets.symmetric(vertical: 1, horizontal: 8),
+      backgroundColor: Color(0xFF50AFC0),
       label: Text(
         label,
-        style: TextStyle(
-          color: Colors.white,
+        style: TextStyles.chip.copyWith(
+          fontSize: ResponsiveWidget.isSmallScreen(context) ? 11.0 : 11.0,
         ),
       ),
-      backgroundColor: Color(0xFF50AFC0),
-      elevation: 0.0,
-      padding: EdgeInsets.all(8.0),
     );
   }
 
