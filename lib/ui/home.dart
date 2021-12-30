@@ -342,7 +342,7 @@ class HomePage extends StatelessWidget {
 
   Widget _buildSkillChip(BuildContext context, String label) {
     return Chip(
-      labelPadding: EdgeInsets.symmetric(vertical: 1, horizontal: 8),
+//       labelPadding: EdgeInsets.symmetric(vertical: 1, horizontal: 8),
       backgroundColor: Color(0xFF50AFC0),
       label: Text(
         label,
