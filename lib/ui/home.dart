@@ -349,8 +349,8 @@ class HomePage extends StatelessWidget {
 //       ),
       label: Text(
         label,
-        style: TextStyles.chip.copyWith(
-          fontSize: ResponsiveWidget.isSmallScreen(context) ? 10.0 : 11.0,
+        style: TextStyle(
+          color: Colors.white,
         ),
       ),
       backgroundColor: Color(0xFF50AFC0),
