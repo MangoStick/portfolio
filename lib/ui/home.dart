@@ -37,13 +37,17 @@ class HomePage extends StatelessWidget {
       title: _buildTitle(),
       backgroundColor: Colors.transparent,
       elevation: 0.0,
-      actions: !ResponsiveWidget.isSmallScreen(context) ? _buildActions(context) : null,
-      leading: ResponsiveWidget.isSmallScreen(context) ? Builder(
-        builder: (context) => IconButton(
-            icon: new Icon(Icons.menu, color: Color(0xFF45405B)),
-            onPressed: () => Scaffold.of(context).openDrawer(),
-          ),
-        ) : null,
+      actions: !ResponsiveWidget.isSmallScreen(context)
+          ? _buildActions(context)
+          : null,
+      leading: ResponsiveWidget.isSmallScreen(context)
+          ? Builder(
+              builder: (context) => IconButton(
+                icon: new Icon(Icons.menu, color: Color(0xFF45405B)),
+                onPressed: () => Scaffold.of(context).openDrawer(),
+              ),
+            )
+          : null,
     );
   }
 
@@ -72,15 +76,15 @@ class HomePage extends StatelessWidget {
 
   List<Widget> _buildActions(BuildContext context) {
     return <Widget>[
-       MaterialButton(
-         child: Text(
-           Strings.menu_home,
-           style: TextStyles.menu_item.copyWith(
-             color: Color(0xFF50AFC0),
-           ),
-         ),
-         onPressed: () {},
-       ),
+      MaterialButton(
+        child: Text(
+          Strings.menu_home,
+          style: TextStyles.menu_item.copyWith(
+            color: Color(0xFF50AFC0),
+          ),
+        ),
+        onPressed: () {},
+      ),
       MaterialButton(
         child: Text(
           Strings.menu_about,
@@ -88,15 +92,16 @@ class HomePage extends StatelessWidget {
         ),
         onPressed: () {
           //Navigator.push(context,PageRouteBuilder(pageBuilder: (_, __, ___) => AboutPage()));
-          //Navigator.pushAndRemoveUntil(context, PageRouteBuilder(pageBuilder: (_, __, ___) => AboutPage()), (route) => false);   
+          //Navigator.pushAndRemoveUntil(context, PageRouteBuilder(pageBuilder: (_, __, ___) => AboutPage()), (route) => false);
           //Navigator.pushNamed(context, Strings.AboutRoute);
-          Navigator.pushNamedAndRemoveUntil(context, Strings.AboutRoute, (route) => false);
+          Navigator.pushNamedAndRemoveUntil(
+              context, Strings.AboutRoute, (route) => false);
         },
       ),
       // MaterialButton(
       //   child: Text(
-       //    Strings.menu_contact,
-       //    style: TextStyles.menu_item,
+      //    Strings.menu_contact,
+      //    style: TextStyles.menu_item,
       //   ),
       //   onPressed: () {},
       //),
@@ -358,7 +363,7 @@ class HomePage extends StatelessWidget {
     Education(
       'Jul 2021',
       'Present',
-      'Krungsri Auto (OA), Thailand',
+      'Ayudhya Capital Auto Lease Public Company Limited, Thailand',
       'Software Developer',
     ),
     Education(
@@ -517,41 +522,46 @@ class HomePage extends StatelessWidget {
         //   ),
         // ),
 
-         MaterialButton(
+        MaterialButton(
           minWidth: 0,
           child: Icon(
-              FontAwesomeIcons.facebookSquare,
-              color: Color(0xFF45405B),
-              size: 20.0,
-            ),
-          onPressed: () => html.window.open("https://www.facebook.com/Jack.Jakkapat.Noimhor", "Facebook"),
+            FontAwesomeIcons.facebookSquare,
+            color: Color(0xFF45405B),
+            size: 20.0,
+          ),
+          onPressed: () => html.window.open(
+              "https://www.facebook.com/Jack.Jakkapat.Noimhor", "Facebook"),
         ),
         MaterialButton(
           minWidth: 0,
           child: Icon(
-              FontAwesomeIcons.instagram,
-              color: Color(0xFF45405B),
-              size: 20.0,
-            ),
-          onPressed: () => html.window.open("https://www.instagram.com/n.jakkapat", "Instagram"),
+            FontAwesomeIcons.instagram,
+            color: Color(0xFF45405B),
+            size: 20.0,
+          ),
+          onPressed: () => html.window
+              .open("https://www.instagram.com/n.jakkapat", "Instagram"),
         ),
         MaterialButton(
           minWidth: 0,
           child: Icon(
-              FontAwesomeIcons.githubAlt,
-              color: Color(0xFF45405B),
-              size: 20.0,
-            ),
-          onPressed: () => html.window.open("https://github.com/MangoStick", "Github"),
+            FontAwesomeIcons.githubAlt,
+            color: Color(0xFF45405B),
+            size: 20.0,
+          ),
+          onPressed: () =>
+              html.window.open("https://github.com/MangoStick", "Github"),
         ),
         MaterialButton(
           minWidth: 0,
           child: Icon(
-              FontAwesomeIcons.spotify,
-              color: Color(0xFF45405B),
-              size: 20.0,
-            ),
-          onPressed: () => html.window.open("https://open.spotify.com/user/jakkapat?fbclid=IwAR3nuCfQDf7dFoxSNyIHEt0Uv6rkDW4IHfLWWqX5vAeyjUGkdSDWo17O_NU", "Spotify"),
+            FontAwesomeIcons.spotify,
+            color: Color(0xFF45405B),
+            size: 20.0,
+          ),
+          onPressed: () => html.window.open(
+              "https://open.spotify.com/user/jakkapat?fbclid=IwAR3nuCfQDf7dFoxSNyIHEt0Uv6rkDW4IHfLWWqX5vAeyjUGkdSDWo17O_NU",
+              "Spotify"),
         ),
       ],
     );
