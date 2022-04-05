@@ -6,8 +6,10 @@ class Strings {
   static const String me = ' Me';
   static const String portfoli = 'Portfoli';
   static const String o = 'o';
-  static const String headline = 'I\'m Jakkapat Noimhor, Web & Mobile App Developer from Chiang Rai, Thailand';
-  static const String summary = 'Proficient at writing code in various languages, feature development and implementation. Specialize in thinking outside the box to find unique solutions, fast Learner.';
+  static const String headline =
+      'I\'m Jakkapat Noimhor (Jacky), Web & Mobile App Developer from Chiang Rai, Thailand';
+  static const String summary =
+      'Proficient at writing code in various languages, feature development and implementation. Specialize in thinking outside the box to find unique solutions, fast Learner.';
   static const String experience = 'Experience';
   static const String workexperience = 'Work Experience';
   static const String exp_detail = 'coming soon..';
@@ -22,9 +24,7 @@ class Strings {
   static const String menu_about = 'Portfolio';
   static const String menu_contact = 'Contact';
 
-
   // routes
   static const String HomeRoute = '/';
-  static const String AboutRoute ='/about';
-
+  static const String AboutRoute = '/about';
 }
