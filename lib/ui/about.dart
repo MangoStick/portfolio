@@ -37,13 +37,17 @@ class AboutPage extends StatelessWidget {
       title: _buildTitle(),
       backgroundColor: Colors.transparent,
       elevation: 0.0,
-      actions: !ResponsiveWidget.isSmallScreen(context) ? _buildActions(context) : null,
-      leading: ResponsiveWidget.isSmallScreen(context) ? Builder(
-        builder: (context) => IconButton(
-            icon: new Icon(Icons.menu, color: Color(0xFF45405B)),
-            onPressed: () => Scaffold.of(context).openDrawer(),
-          ),
-        ) : null,
+      actions: !ResponsiveWidget.isSmallScreen(context)
+          ? _buildActions(context)
+          : null,
+      leading: ResponsiveWidget.isSmallScreen(context)
+          ? Builder(
+              builder: (context) => IconButton(
+                icon: new Icon(Icons.menu, color: Color(0xFF45405B)),
+                onPressed: () => Scaffold.of(context).openDrawer(),
+              ),
+            )
+          : null,
     );
   }
 
@@ -74,30 +78,28 @@ class AboutPage extends StatelessWidget {
 
   List<Widget> _buildActions(BuildContext context) {
     return <Widget>[
-       MaterialButton(
-         child: Text(
-           Strings.menu_home,
-           style: TextStyles.menu_item
-         ),
-         onPressed: () {
-           //Navigator.pushAndRemoveUntil(context, PageRouteBuilder(pageBuilder: (_, __, ___) => HomePage()), (route) => false);     
-           Navigator.pushNamedAndRemoveUntil(context, Strings.HomeRoute, (route) => false);
-           //Navigator.of(context).pushNamedAndRemoveUntil('/', (Route<dynamic> route) => false);
-         },
-       ),
+      MaterialButton(
+        child: Text(Strings.menu_home, style: TextStyles.menu_item),
+        onPressed: () {
+          //Navigator.pushAndRemoveUntil(context, PageRouteBuilder(pageBuilder: (_, __, ___) => HomePage()), (route) => false);
+          Navigator.pushNamedAndRemoveUntil(
+              context, Strings.HomeRoute, (route) => false);
+          //Navigator.of(context).pushNamedAndRemoveUntil('/', (Route<dynamic> route) => false);
+        },
+      ),
       MaterialButton(
         child: Text(
           Strings.menu_about,
           style: TextStyles.menu_item.copyWith(
-             color: Color(0xFF50AFC0),
-           ),
+            color: Color(0xFF50AFC0),
+          ),
         ),
         onPressed: () {},
       ),
       // MaterialButton(
       //   child: Text(
-       //    Strings.menu_contact,
-       //    style: TextStyles.menu_item,
+      //    Strings.menu_contact,
+      //    style: TextStyles.menu_item,
       //   ),
       //   onPressed: () {},
       //),
@@ -300,49 +302,49 @@ class AboutPage extends StatelessWidget {
       'Internal Project',
     ),
     Education(
-      'Front-end',
+      'Front-End',
       '',
       'Flutter/Dart/Firebase Cloud Messaging',
       'RBSC Staff (Mobile)',
     ),
     Education(
-      'Front-end',
+      'Front-End',
       '',
       'Flutter/Dart/Firebase Cloud Messaging',
       'RBSC Membership (Mobile)',
     ),
     Education(
-      'Front-end',
+      'Front-End',
       '',
       'Angular 11/TypeScript',
       'RBSC Membership Management',
     ),
     Education(
-      'Front-end',
+      'Front-End',
       '',
       'Angular 11/TypeScript/JavaScript',
       'BBTEC PM&M',
     ),
     Education(
-      'Front-end',
+      'Front-End',
       '',
       'Flutter/Dart',
       'RBSC Staff Demo (Mobile)',
     ),
     Education(
-      'Front-end',
+      'Front-End',
       '',
       'Flutter/Dart',
       'RBSC Member Demo (Mobile)',
     ),
     Education(
-      'Front-end',
+      'Front-End',
       '',
       'Angular 8/TypeScript',
       'SCG e-Ordering',
     ),
     Education(
-      'Front-end',
+      'Full-Stack',
       '',
       'Angular 8/TypeScript/C#/.NetCore',
       'Dip e-Trademark',
@@ -351,7 +353,7 @@ class AboutPage extends StatelessWidget {
 
   final educationList2 = [
     Education(
-      'Front-end',
+      'Front-End',
       '',
       'Flutter/Dart',
       'Serves (Mobile)',
@@ -375,13 +377,13 @@ class AboutPage extends StatelessWidget {
       'SteelCity CMS',
     ),
     Education(
-      'Back-end',
+      'Back-End',
       '',
       'C#/.NET/Web Service asmx/SQL Server',
       'Thainamthip - PR Approval',
     ),
     Education(
-      'Back-end',
+      'Back-End',
       '',
       'AngularJs/C#/.NET/RDLC Report',
       'PTT - eBudgeting ',
@@ -460,33 +462,32 @@ class AboutPage extends StatelessWidget {
 
   Widget _buildEducationTile(Education education) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 8.0),
-      child: Container(
-        // height: 60,
-        width: 250,
-        padding: EdgeInsets.symmetric(horizontal: 0, vertical: 0),
-       //color: Color(0xFF50AFC0),
-        child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: <Widget>[
-          Text(
-            '${education.post}',
-            style: TextStyles.company,
+        padding: EdgeInsets.symmetric(vertical: 8.0),
+        child: Container(
+          // height: 60,
+          width: 250,
+          padding: EdgeInsets.symmetric(horizontal: 0, vertical: 0),
+          //color: Color(0xFF50AFC0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              Text(
+                '${education.post}',
+                style: TextStyles.company,
+              ),
+              Text(
+                '${education.organization}',
+                style: TextStyles.body.copyWith(
+                  color: Color(0xFF45405B),
+                ),
+              ),
+              Text(
+                '${education.from}',
+                style: TextStyles.body,
+              ),
+            ],
           ),
-          Text(
-            '${education.organization}',
-            style: TextStyles.body.copyWith(
-              color: Color(0xFF45405B),
-            ),
-          ),
-           Text(
-             '${education.from}',
-             style: TextStyles.body,
-           ),
-        ],
-      ),
-      )
-    );
+        ));
   }
 
   // Footer Methods:------------------------------------------------------------
@@ -576,38 +577,43 @@ class AboutPage extends StatelessWidget {
         MaterialButton(
           minWidth: 0,
           child: Icon(
-              FontAwesomeIcons.facebookSquare,
-              color: Color(0xFF45405B),
-              size: 20.0,
-            ),
-          onPressed: () => html.window.open("https://www.facebook.com/Jack.Jakkapat.Noimhor", "Facebook"),
+            FontAwesomeIcons.facebookSquare,
+            color: Color(0xFF45405B),
+            size: 20.0,
+          ),
+          onPressed: () => html.window.open(
+              "https://www.facebook.com/Jack.Jakkapat.Noimhor", "Facebook"),
         ),
         MaterialButton(
           minWidth: 0,
           child: Icon(
-              FontAwesomeIcons.instagram,
-              color: Color(0xFF45405B),
-              size: 20.0,
-            ),
-          onPressed: () => html.window.open("https://www.instagram.com/n.jakkapat", "Instagram"),
+            FontAwesomeIcons.instagram,
+            color: Color(0xFF45405B),
+            size: 20.0,
+          ),
+          onPressed: () => html.window
+              .open("https://www.instagram.com/n.jakkapat", "Instagram"),
         ),
         MaterialButton(
           minWidth: 0,
           child: Icon(
-              FontAwesomeIcons.githubAlt,
-              color: Color(0xFF45405B),
-              size: 20.0,
-            ),
-          onPressed: () => html.window.open("https://github.com/MangoStick", "Github"),
+            FontAwesomeIcons.githubAlt,
+            color: Color(0xFF45405B),
+            size: 20.0,
+          ),
+          onPressed: () =>
+              html.window.open("https://github.com/MangoStick", "Github"),
         ),
         MaterialButton(
           minWidth: 0,
           child: Icon(
-              FontAwesomeIcons.spotify,
-              color: Color(0xFF45405B),
-              size: 20.0,
-            ),
-          onPressed: () => html.window.open("https://open.spotify.com/user/jakkapat?fbclid=IwAR3nuCfQDf7dFoxSNyIHEt0Uv6rkDW4IHfLWWqX5vAeyjUGkdSDWo17O_NU", "Spotify"),
+            FontAwesomeIcons.spotify,
+            color: Color(0xFF45405B),
+            size: 20.0,
+          ),
+          onPressed: () => html.window.open(
+              "https://open.spotify.com/user/jakkapat?fbclid=IwAR3nuCfQDf7dFoxSNyIHEt0Uv6rkDW4IHfLWWqX5vAeyjUGkdSDWo17O_NU",
+              "Spotify"),
         ),
       ],
     );
