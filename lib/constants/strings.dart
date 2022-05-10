@@ -7,7 +7,7 @@ class Strings {
   static const String portfoli = 'Portfoli';
   static const String o = 'o';
   static const String headline =
-      'I\'m Jakkapat Noimhor (Jacky), Full stack Developer from Chiang Rai, Thailand';
+      'I\'m Jakkapat Noimhor (Jacky), Full Stack Developer from Chiang Rai, Thailand';
   static const String summary =
       'Proficient at writing code in various languages, feature development and implementation. Specialize in thinking outside the box to find unique solutions, fast Learner.';
   static const String experience = 'Experience';
