@@ -298,6 +298,12 @@ class AboutPage extends StatelessWidget {
     Education(
       'Full-stack',
       '',
+      'Laravel/PostgreSQL',
+      'BAAC Prediction',
+    ),
+    Education(
+      'Full-stack',
+      '',
       'Flutter/Dart/Kotlin/Python',
       'Internal Project',
     ),
