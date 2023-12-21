@@ -98,6 +98,7 @@ class HomePage extends StatelessWidget {
               context, Strings.AboutRoute, (route) => false);
         },
       ),
+      
       // MaterialButton(
       //   child: Text(
       //    Strings.menu_contact,
