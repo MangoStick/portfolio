@@ -305,7 +305,7 @@ class AboutPage extends StatelessWidget {
       'Full-stack',
       '',
       'Flutter/Dart/Go/NodeJs/SQL Server',
-      'BAAC Prediction',
+      'Excise Wine Duty Tax',
     ),
     Education(
       'Full-stack',
@@ -355,15 +355,15 @@ class AboutPage extends StatelessWidget {
       'Angular 8/TypeScript',
       'SCG e-Ordering',
     ),
+  ];
+
+  final educationList2 = [
     Education(
       'Full-stack',
       '',
       'Angular 8/TypeScript/C#/.NetCore',
       'Dip e-Trademark',
     ),
-  ];
-
-  final educationList2 = [
     Education(
       'Front-end',
       '',
