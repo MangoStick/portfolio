@@ -198,7 +198,7 @@ class HomePage extends StatelessWidget {
   Widget _buildIllustration() {
     return Image.network(
       Assets.programmer3,
-      height: ScreenUtil.getInstance().setWidth(345), //480.0
+      height: ScreenUtil.getInstance().setWidth(300), //480.0
     );
   }
 

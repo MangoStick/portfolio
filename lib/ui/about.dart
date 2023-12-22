@@ -195,7 +195,7 @@ class AboutPage extends StatelessWidget {
   Widget _buildIllustration() {
     return Image.network(
       Assets.programmer3,
-      height: ScreenUtil.getInstance().setWidth(345), //480.0
+      height: ScreenUtil.getInstance().setWidth(300), //480.0
     );
   }
 
@@ -211,7 +211,7 @@ class AboutPage extends StatelessWidget {
         // _buildHeadline(context),
         SizedBox(height: ResponsiveWidget.isSmallScreen(context) ? 12.0 : 24.0),
         // _buildSummary(),
-        SizedBox(height: ResponsiveWidget.isSmallScreen(context) ? 24.0 : 48.0),
+        SizedBox(height: ResponsiveWidget.isSmallScreen(context) ? 24.0 : 0.0),
         ResponsiveWidget.isSmallScreen(context)
             ? Column(
                 mainAxisSize: MainAxisSize.min,
@@ -221,6 +221,7 @@ class AboutPage extends StatelessWidget {
                   // SizedBox(height: 200.0),
                   _buildEducation2(),
                   //_buildSkills(context),
+                  _buildEducation3()
                 ],
               )
             : _buildSkillsAndEducation(context)
@@ -289,6 +290,11 @@ class AboutPage extends StatelessWidget {
           flex: 1,
           child: _buildEducation2(),
         ),
+        SizedBox(width: 40.0),
+        Expanded(
+          flex: 1,
+          child: _buildEducation3(),
+        ),
       ],
     );
   }
@@ -298,31 +304,37 @@ class AboutPage extends StatelessWidget {
     Education(
       'Full-stack',
       '',
-      'Laravel/PostgreSQL',
-      'BAAC Prediction',
+      'Laravel/SQL Server',
+      'NT Web Config Demo',
     ),
     Education(
       'Full-stack',
       '',
-      'Flutter/Dart/Go/NodeJs/SQL Server',
+      'Laravel/PostgreSQL',
+      'BAAC Web Prediction',
+    ),
+    Education(
+      'Full-stack',
+      '',
+      'Flutter/Go/NodeJs/SQL Server',
       'Excise Wine Duty Tax',
     ),
     Education(
       'Full-stack',
       '',
-      'Flutter/Dart/Kotlin/Python',
+      'Flutter/Kotlin/Python',
       'Internal Project',
     ),
     Education(
       'Front-end',
       '',
-      'Flutter/Dart/Firebase Cloud Messaging',
+      'Flutter/Firebase Cloud Messaging',
       'RBSC Staff (Mobile)',
     ),
     Education(
       'Front-end',
       '',
-      'Flutter/Dart/Firebase Cloud Messaging',
+      'Flutter/Firebase Cloud Messaging',
       'RBSC Membership (Mobile)',
     ),
     Education(
@@ -337,16 +349,20 @@ class AboutPage extends StatelessWidget {
       'Angular 11/TypeScript/JavaScript',
       'BBTEC PM&M',
     ),
+    
+  ];
+
+  final educationList2 = [
     Education(
       'Front-end',
       '',
-      'Flutter/Dart',
+      'Flutter',
       'RBSC Staff Demo (Mobile)',
     ),
     Education(
       'Front-end',
       '',
-      'Flutter/Dart',
+      'Flutter',
       'RBSC Member Demo (Mobile)',
     ),
     Education(
@@ -355,9 +371,6 @@ class AboutPage extends StatelessWidget {
       'Angular 8/TypeScript',
       'SCG e-Ordering',
     ),
-  ];
-
-  final educationList2 = [
     Education(
       'Full-stack',
       '',
@@ -367,13 +380,13 @@ class AboutPage extends StatelessWidget {
     Education(
       'Front-end',
       '',
-      'Flutter/Dart',
+      'Flutter',
       'Serves (Mobile)',
     ),
     Education(
       'Full-stack',
       '',
-      'Flutter/Dart/Firebase Cloud Messaging',
+      'Flutter/Firebase Cloud Messaging',
       'E-Leave (Mobile)',
     ),
     Education(
@@ -388,6 +401,11 @@ class AboutPage extends StatelessWidget {
       'PHP Laravel/MySQL',
       'SteelCity CMS',
     ),
+    
+  ];
+
+
+  final educationList3 = [
     Education(
       'Back-end',
       '',
@@ -415,7 +433,7 @@ class AboutPage extends StatelessWidget {
     Education(
       'Full-stack',
       '',
-      'C#/.NET/SQLs/Nginx',
+      'C#/.NET/SQL Server/Nginx',
       'Eye laser reservation system',
     ),
   ];
@@ -444,6 +462,18 @@ class AboutPage extends StatelessWidget {
     );
   }
 
+  Widget _buildEducation3() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        // _buildEducationContainerHeading(),
+        // _buildEducationSummary(),
+        //SizedBox(height: 50.0),
+        _buildEducationTimeline3(),
+      ],
+    );
+  }
+
   Widget _buildEducationContainerHeading() {
     return Text(
       Strings.experience,
@@ -467,6 +497,13 @@ class AboutPage extends StatelessWidget {
 
   Widget _buildEducationTimeline2() {
     final List<Widget> widgets = educationList2
+        .map((education) => _buildEducationTile(education))
+        .toList();
+    return Column(children: widgets);
+  }
+
+  Widget _buildEducationTimeline3() {
+    final List<Widget> widgets = educationList3
         .map((education) => _buildEducationTile(education))
         .toList();
     return Column(children: widgets);
